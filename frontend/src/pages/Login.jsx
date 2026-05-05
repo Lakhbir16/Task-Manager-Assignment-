@@ -25,7 +25,7 @@ export default function Login() {
     }
   };
 
-  const fillDemo = email => setForm({ email, password: 'password123' });
+  const fillDemo = email => setForm({ email, password: '123456' });
 
   return (
     <div className="auth-page">
@@ -64,12 +64,12 @@ export default function Login() {
         </form>
 
         <div style={{ marginTop: 18, padding: 12, background: '#f9fafb', borderRadius: 8, border: '1px solid #e5e7eb' }}>
-          <p style={{ fontSize: 11, color: '#9ca3af', fontWeight: 600, marginBottom: 8, textTransform: 'uppercase' }}>Demo accounts (password: password123)</p>
+          <p style={{ fontSize: 11, color: '#9ca3af', fontWeight: 600, marginBottom: 8, textTransform: 'uppercase' }}>Demo accounts (password: 123456)</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
             {[
-              ['admin@demo.com', 'Admin'],
-              ['alice@demo.com', 'Member'],
-              ['bob@demo.com', 'Member'],
+              ['admin@gmail.com', 'Admin'],
+              ['member1@gmail.com', 'Member'],
+              ['member2@gmail.com', 'Member'],
             ].map(([email, role]) => (
               <button key={email} onClick={() => fillDemo(email)}
                 className="btn btn-secondary btn-sm" style={{ justifyContent: 'flex-start', gap: 8 }}>
